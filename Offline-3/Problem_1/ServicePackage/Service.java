@@ -1,4 +1,4 @@
-package ServicePackage;
+package Problem_1.ServicePackage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,11 +9,11 @@ public class Service {
     public Service() {
     }
 
-    public double CalculateSum(File fp) throws FileNotFoundException{
+    public int CalculateSum(File fp) throws FileNotFoundException{
         try (Scanner scn = new Scanner(fp)) {
-            double sum = 0;
-            while(scn.hasNextDouble()){
-                sum+= scn.nextDouble();
+            int sum = 0;
+            while(scn.hasNextInt()){
+                sum+= scn.nextInt();
             }
             return sum;
         }
