@@ -1,14 +1,13 @@
-package Problem_1.ServicePackage;
+package ServicePackage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Service {
+public class service {
+    public service(){
 
-    public Service() {
     }
-
     public int CalculateSum(File fp) throws FileNotFoundException{
         try (Scanner scn = new Scanner(fp)) {
             int sum = 0;
