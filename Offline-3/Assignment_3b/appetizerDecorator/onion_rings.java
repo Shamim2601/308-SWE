@@ -8,6 +8,7 @@ public class onion_rings extends burger {
 
     public onion_rings(burger br) {
         Br = br;
+        System.out.println("onion rings added");
     }
 
 

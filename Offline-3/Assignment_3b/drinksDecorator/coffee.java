@@ -6,6 +6,7 @@ public class coffee extends burger {
     private burger Br;
     public coffee(burger br){
         Br = br;
+        System.out.println("coffe added");
     }
 
     @Override
