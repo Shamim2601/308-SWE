@@ -1,13 +1,13 @@
 package Methods;
 
-public class Grade3 {
-    int marksInt(String marks){
+public final class Grade3 {
+    public int marksInt(String marks){
         double markFloat = Double.parseDouble(marks);
         int result = (int)Math.ceil(markFloat);
         return result;
     }
 
-    String calculateGrade(String marks){
+    public String calculateGrade(String marks){
         String grade="";
         try {
             int mark = marksInt(marks);
